@@ -1,4 +1,3 @@
-import { remoteConfig } from "./firebase";
 import {
   fetchAndActivate,
   getValue,

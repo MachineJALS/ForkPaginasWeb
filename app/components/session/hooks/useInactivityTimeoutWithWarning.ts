@@ -8,7 +8,7 @@ import {
 } from "react";
 import { useRouter } from "next/navigation";
 import { signOut } from "firebase/auth";
-import { auth } from "@/app/services/firebase";
+//import { auth } from "@/app/services/firebase";
 import {
   BROWSER_EVENTS,
   PATHS,
@@ -67,7 +67,7 @@ export const useInactivityTimeoutWithWarning = ({
       async () => {
         try {
           if (onTimeout) onTimeout();
-          await signOut(auth);
+          //await signOut(auth);
           router.push(redirectPath);
         } catch {
           router.push(redirectPath);
@@ -117,7 +117,7 @@ export const useInactivityTimeoutWithWarning = ({
       async () => {
         try {
           if (onTimeout) onTimeout();
-          await signOut(auth);
+          //await signOut(auth);
           router.push(redirectPath);
         } catch {
           router.push(redirectPath);

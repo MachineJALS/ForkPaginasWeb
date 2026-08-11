@@ -1,0 +1,5 @@
+# Enforce LF for env file and normalize line endings
+env text eol=lf
+# Enforce LF for env file and normalize text files
+env text eol=lf
+* text=auto

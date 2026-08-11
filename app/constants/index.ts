@@ -80,3 +80,4 @@ export {
 } from "@/app/components/form-field/constants/InputTypes.constants";
 export { OMITTED_PROPS } from "./props/OmittedProps.constants";
 export { MILISECONDS } from "./miliseconds/Miliseconds.constants";
+export { USER_LISTS } from "./strings/UserLists.constants";

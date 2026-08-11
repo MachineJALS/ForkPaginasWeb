@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
 import { SESSION_CONFIG } from "@/app/constants";
-import { auth } from "@/app/services/firebase";
+//import { auth } from "@/app/services/firebase";
 import { useSessionStore } from "@/app/components/session/hooks/useSessionStore";
 import { InactivityTimeoutProvider } from "./InactivityTimeoutContext";
 import SessionForm from "../session-inactivity-form/SessionInactivityForm";
