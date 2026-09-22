@@ -1,25 +1,17 @@
 import { useState } from 'react'
-import { CONTADOR_TEXT } from './constants/contador.constants'
+import { Contador1 } from './contador1/contador1'
+import { Contador2 } from './contador2/contador2'
+import { Usuario } from './usuario/usuario'
 
 export function LayoutContador() {
     const [count, setCount] = useState(0)
-
-    function handleIncrement() {
-
-        setCount(prev => prev + 1)
-    }
-
-    function handleDecrement() {
-
-        setCount(prev => prev - 1)
-    }
+    const [text, setText] = useState('')
 
     return (
         <>
-            <h2>Contador</h2>
-                <p>{CONTADOR_TEXT.VALOR_ACTUAL}: {count}</p>
-                <button onClick={count < 5 ? handleIncrement : null}>{CONTADOR_TEXT.INCREMENTAR}</button>
-                <button onClick={count > 0 ? handleDecrement : null}>{CONTADOR_TEXT.DECREMENTAR}</button>
+            <Contador1 count={count} setCount={setCount} />
+            <Contador2 count={count} setCount={setCount} />
+            <Usuario count={count} setCount={setCount} />
         </>
     )
 }
