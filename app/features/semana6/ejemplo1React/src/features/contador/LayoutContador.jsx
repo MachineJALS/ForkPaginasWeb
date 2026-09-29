@@ -5,7 +5,6 @@ import { Usuario } from './usuario/usuario'
 
 export function LayoutContador() {
     const [count, setCount] = useState(0)
-    const [text, setText] = useState('')
 
     return (
         <>
